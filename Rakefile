@@ -20,7 +20,7 @@ $exclude = [
 
 desc 'Backup previous dotfiles.'
 task :backup do
-  dir = FileUtils.mkdir_p( File.expand_path( File.join( '~' , '.dotfiles-backup', Time.now.to_s ) ) )
+  dir = FileUtils.mkdir_p( File.expand_path( File.join( '~' , '.dotfiles-backup', Time.now.to_s ) ) ).first
   entries.each do | file |
     orig = File.expand_path( "~/#{file}" )
     FileUtils.cp_r orig, "#{dir}/#{file}", :verbose => true if File.exists? orig
@@ -33,7 +33,7 @@ task :update do
 end
 
 desc 'Run all install tasks in order.'
-task :install => [ 'install:deps', 'install:copy', 'install:post' ]
+task :install => [ 'install:deps', 'install:copy' ]
 
 namespace :install do
 
