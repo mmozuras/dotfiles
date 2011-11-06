@@ -1,0 +1,10 @@
+[user]
+	name = Mindaugas Mozūras
+	email = mindaugas.mozuras@gmail.com
+[diff]
+[color]
+        ui = auto
+[core]
+	editor = vim
+[merge]
+        tool = vimdiff
