@@ -6,7 +6,7 @@ The bootstrapper depends on three things: ruby, rake, and bundler.
 
 To install, just run:
 
-    zsh < <( curl https://raw.github.com/gf3/dotfiles/master/bootstrap.sh )
+    zsh < <( curl https://raw.github.com/mmozuras/dotfiles/master/bootstrap.sh )
 
 ## Stay Updated
 
