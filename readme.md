@@ -12,7 +12,7 @@ To install, just run:
 
 To get updated, just run the bootstrapper again:
 
-    ~/.dotfiles/bootstrap.sh
+    sh ~/.dotfiles/bootstrap.sh
 
 # Thanks
 

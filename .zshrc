@@ -9,6 +9,9 @@ plugins=(rails git ruby brew github gem heroku npm node osx rails3)
 
 source $ZSH/oh-my-zsh.sh
 
+alias vi='mvim -v'
+alias vim='mvim -v'
+
 # Customize to your needs...
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/mindaugasmozuras/.rvm/bin
 
