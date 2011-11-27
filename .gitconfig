@@ -24,6 +24,7 @@
         fa = fetch --all
         pom = push origin master
         b = branch
+        sub = submodule
 [format]
         pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
 [core]
