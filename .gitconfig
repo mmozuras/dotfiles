@@ -8,6 +8,8 @@
         st = status
         ci = commit
         co = checkout
+        p = push
+        u = pull
         di = diff
         dc = diff --cached
         ds = diff --stat=160,120
