@@ -32,9 +32,12 @@
         spull = svn rebase
         spush = svn dcommit
         sfetch = svn fetch
+	ctags = !.git/hooks/ctags
 [format]
         pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
 [core]
 	editor = vim
 [merge]
         tool = vimdiff
+[init]
+	templatedir = ~/.git_template
