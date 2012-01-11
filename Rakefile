@@ -33,7 +33,7 @@ task :update do
 end
 
 desc 'Run all install tasks in order.'
-task :install => [ 'install:deps', 'install:copy' ]
+task :install => [ 'install:deps', 'install:copy', 'install:hooks' ]
 
 namespace :install do
 
@@ -47,6 +47,16 @@ namespace :install do
   task :copy do
     entries.each do | file |
       FileUtils.cp_r file, File.expand_path( "~/#{file}" ), :verbose => true, :remove_destination => true
+    end
+  end
+
+  desc 'Mark files in .git_template/hooks as executable'
+  task :hooks do
+    dir = File.expand_path( '~/.git_template/hooks' )
+    hooks ||= Dir.entries(dir) - $exclude
+    hooks.each do | file |
+      path = File.join(dir, file)
+      system 'chmod +x ' + path
     end
   end
 
