@@ -29,6 +29,7 @@
         pom = push origin master
         b = branch
         sub = submodule
+        subpull = submodule foreach git pull origin master
         spull = svn rebase
         spush = svn dcommit
         sfetch = svn fetch
