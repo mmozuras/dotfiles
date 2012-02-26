@@ -8,8 +8,8 @@
         st = status
         ci = commit
         co = checkout
-        p = push
-        u = pull
+        ps = push
+        pl = pull
         di = diff
         dc = diff --cached
         ds = diff --stat=160,120
@@ -20,14 +20,11 @@
         h = !git head
         r = !git --no-pager l -20
         ra = !git r --all
-        ff = merge --ff-only
-        pullff = pull --ff-only
-        noff = merge --no-ff
         l = log --graph --abbrev-commit --date=relative
         la = !git l --all
         fa = fetch --all
         pom = push origin master
-        b = branch
+        b = branch -v
         sub = submodule
         subpull = submodule foreach git pull origin master
         spull = svn rebase
