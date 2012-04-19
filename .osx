@@ -115,8 +115,8 @@ defaults write com.apple.iTunes disablePing -bool true
 defaults write com.apple.Mail DisableReplyAnimations -bool true
 defaults write com.apple.Mail DisableSendAnimations -bool true
 
-# Enable Dashboard dev mode (allows keeping widgets on the desktop)
-defaults write com.apple.dashboard devmode -bool true
+# Disable Dashboard
+defaults write com.apple.dashboard mcx-disabled -boolean YES
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
