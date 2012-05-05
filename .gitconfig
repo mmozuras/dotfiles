@@ -1,49 +1,66 @@
 [user]
-	name = Mindaugas Mozūras
-	email = mindaugas.mozuras@gmail.com
+  name = Mindaugas Mozūras
+  email = mindaugas.mozuras@gmail.com
 [diff]
 [color]
-        ui = auto
+  ui = auto
 [alias]
-        s = status --short --untracked-files
-        st = status
-        ci = commit
-        ca = !git add --all && git commit
-        co = checkout
-        go = checkout -B
-        ps = push
-        pom = push origin master
-        fa = fetch --all
-        pl = pull
-        plr = pull --rebase
-        ri = rebase --interactive
-        di = diff
-        dc = diff --cached
-        ds = diff --stat=160,120
-        dh1 = diff HEAD~1
-        amend = commit --amend
-        aa = add --all
-        head = !git l -1
-        h = !git head
-        l = log --graph --abbrev-commit --date=relative
-        la = !git l --all
-        b = branch --verbose
-        re = remote --verbose
-        redo = reset --soft HEAD^
-        purge = !git reset --hard && git clean -fd
-        sub = submodule
-        subpull = submodule foreach git pull origin master
-        spull = svn rebase
-        spush = svn dcommit
-        listconf = config --global --list
-	ctags = !.git/hooks/ctags
+  s = status --short --untracked-files
+  st = status
+
+  a = add
+  aa = add --all
+
+  c = commit
+  ca = !git add --all && git commit
+  amend = commit --amend
+
+  co = checkout
+  go = checkout -B
+
+  ps = push
+  pom = push origin master
+
+  fa = fetch --all
+  pl = pull
+  plr = pull --rebase
+
+  sub = submodule
+  subpull = submodule foreach git pull origin master
+
+  r = rebase
+  ri = rebase --interactive
+  rc = rebase --continue
+  rs = rebase --skip
+
+  di = diff
+  dc = diff --cached
+  ds = diff --stat=160,120
+  dh1 = diff HEAD~1
+
+  l = log --graph --abbrev-commit --date=relative
+  head = !git l -1
+  h = !git head
+  la = !git l --all
+
+  b = branch --verbose
+  re = remote --verbose
+
+  redo = reset --soft HEAD^
+  purge = !git reset --hard && git clean -fd
+
+  listconf = config --global --list
+  ctags = !.git/hooks/ctags
+
+  spull = svn rebase
+  spush = svn dcommit
 [format]
-        pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
+  pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
 [core]
-	editor = vim
+  editor = vim
 [merge]
-        tool = vimdiff
+  tool = vimdiff
 [github]
-        user = mmozuras
+  user = mmozuras
 [init]
-	templatedir = ~/.git_template
+  templatedir = ~/.git_template
