@@ -8,7 +8,9 @@
         s = status --short --untracked-files
         st = status
         ci = commit
+        ca = !git add --all && git commit
         co = checkout
+        go = checkout -B
         ps = push
         pom = push origin master
         fa = fetch --all
@@ -41,5 +43,7 @@
 	editor = vim
 [merge]
         tool = vimdiff
+[github]
+        user = mmozuras
 [init]
 	templatedir = ~/.git_template
