@@ -33,6 +33,7 @@
   rc = rebase --continue
   rs = rebase --skip
 
+  d = diff
   di = diff
   dc = diff --cached
   ds = diff --stat=160,120
@@ -42,6 +43,7 @@
   head = !git l -1
   h = !git head
   la = !git l --all
+  week = shortlog --since=one.week.ago
 
   b = branch --verbose
   re = remote --verbose
@@ -49,6 +51,7 @@
   redo = reset --soft HEAD^
   purge = !git reset --hard && git clean -fd
 
+  g = grep -I
   listconf = config --global --list
   ctags = !.git/hooks/ctags
 
@@ -58,6 +61,7 @@
   pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
 [core]
   editor = vim
+  excludesfile = ~/.gitignore
 [merge]
   tool = vimdiff
 [github]
