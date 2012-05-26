@@ -37,13 +37,17 @@
   di = diff
   dc = diff --cached
   ds = diff --stat=160,120
-  dh1 = diff HEAD~1
+  dh = diff HEAD~1
 
   l = log --graph --abbrev-commit --date=relative
   head = !git l -1
   h = !git head
   la = !git l --all
+
+  day = shortlog --since=one.day.ago
   week = shortlog --since=one.week.ago
+  month = shortlog --since=one.month.ago
+  top = shortlog --summary --numbered
 
   b = branch --verbose
   re = remote --verbose
