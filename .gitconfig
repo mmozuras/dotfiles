@@ -30,6 +30,10 @@
 
   r = rebase
   ri = rebase --interactive
+  ri2 = rebase --interactive HEAD~2
+  ri3 = rebase --interactive HEAD~3
+  ri4 = rebase --interactive HEAD~4
+  ri5 = rebase --interactive HEAD~5
   rc = rebase --continue
   rs = rebase --skip
 
