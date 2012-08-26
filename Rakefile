@@ -49,15 +49,4 @@ namespace :install do
       FileUtils.cp_r file, File.expand_path( "~/#{file}" ), :verbose => true, :remove_destination => true
     end
   end
-
-  desc 'Mark files in .git_template/hooks as executable'
-  task :hooks do
-    dir = File.expand_path( '~/.git_template/hooks' )
-    hooks ||= Dir.entries(dir) - $exclude
-    hooks.each do | file |
-      path = File.join(dir, file)
-      system 'chmod +x ' + path
-    end
-  end
-
 end

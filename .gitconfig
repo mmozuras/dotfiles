@@ -57,7 +57,6 @@
 
   g = grep -I
   listconf = config --global --list
-  ctags = !.git/hooks/ctags
 
   spull = svn rebase
   spush = svn dcommit
@@ -70,5 +69,3 @@
   tool = vimdiff
 [github]
   user = mmozuras
-[init]
-  templatedir = ~/.git_template
