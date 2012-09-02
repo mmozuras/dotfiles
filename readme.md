@@ -18,14 +18,6 @@ To get updated, just run the bootstrapper again:
 sh ~/.dotfiles/bootstrap.sh
 ```
 
-### Sensible OS X defaults
-
-When setting up a new Mac, you may want to set some sensible OS X defaults:
-
-```bash
-sh .osx
-```
-
 # Thanks
 
 [gf3/dotfiles](https://github.com/gf3/dotfiles)
