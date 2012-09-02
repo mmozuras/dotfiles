@@ -16,3 +16,5 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 export NODE_PATH=/usr/local/lib/node_modules
 
 eval "$(rbenv init -)"
+
+. ~/z/z.sh
