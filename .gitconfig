@@ -53,6 +53,8 @@
   month = shortlog --since=one.month.ago
   top = shortlog --summary --numbered
 
+  what = whatchanged -p --abbrev-commit --pretty=medium
+
   b = branch --verbose
   re = remote --verbose
 
