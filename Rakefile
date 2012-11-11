@@ -33,7 +33,7 @@ task :update do
 end
 
 desc 'Run all install tasks in order.'
-task :install => [ 'install:deps', 'install:copy', 'install:hooks' ]
+task :install => [ 'install:deps', 'install:copy' ]
 
 namespace :install do
 
