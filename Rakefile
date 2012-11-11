@@ -10,12 +10,12 @@ $exclude = [
   '.',
   '..',
   '.git',
-  '.gitignore',
   'bootstrap.sh',
   'Gemfile',
   'Gemfile.lock',
   'Rakefile',
-  'README.md'
+  'README.md',
+  '.osx'
 ]
 
 desc 'Backup previous dotfiles.'
