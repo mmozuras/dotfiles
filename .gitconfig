@@ -75,3 +75,5 @@
   tool = vimdiff
 [github]
   user = mmozuras
+[push]
+  default = simple
