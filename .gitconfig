@@ -12,7 +12,6 @@
   aa = add --all
 
   c = commit
-  ca = !git add --all && git commit
   amend = commit --amend
 
   co = checkout
@@ -30,10 +29,6 @@
 
   r = rebase
   ri = rebase --interactive
-  ri2 = rebase --interactive HEAD~2
-  ri3 = rebase --interactive HEAD~3
-  ri4 = rebase --interactive HEAD~4
-  ri5 = rebase --interactive HEAD~5
   rc = rebase --continue
   rs = rebase --skip
 
@@ -54,12 +49,14 @@
   top = shortlog --summary --numbered
 
   what = whatchanged -p --abbrev-commit --pretty=medium
+  wat = whatchanged -p --abbrev-commit --pretty=medium
 
   b = branch --verbose
   re = remote --verbose
 
   redo = reset --soft HEAD^
   purge = !git reset --hard && git clean -fd
+  cleanup = !git remote prune origin && git gc && git clean -dfx && git stash clear
 
   g = grep -I
   listconf = config --global --list
