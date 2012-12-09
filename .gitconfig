@@ -41,6 +41,7 @@
   dh = diff HEAD~1
 
   l = log --graph --abbrev-commit --date=relative
+  lf = log --patch
   head = !git l -1
   h = !git head
   la = !git l --all
@@ -51,7 +52,6 @@
   top = shortlog --summary --numbered
 
   what = whatchanged -p --abbrev-commit --pretty=medium
-  wat = whatchanged -p --abbrev-commit --pretty=medium
 
   b = branch --verbose
   re = remote --verbose
