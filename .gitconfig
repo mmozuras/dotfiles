@@ -76,4 +76,4 @@
 [github]
   user = mmozuras
 [push]
-  default = simple
+  default = current
