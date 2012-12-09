@@ -60,11 +60,12 @@
   purge = !git reset --hard && git clean -fd
   cleanup = !git remote prune origin && git gc && git clean -dfx && git stash clear
 
+  sl = stash list
+  sa = stash apply
+  ss = stash save
+
   g = grep -I
   listconf = config --global --list
-
-  spull = svn rebase
-  spush = svn dcommit
 [format]
   pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
 [core]
