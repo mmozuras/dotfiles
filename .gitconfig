@@ -16,6 +16,8 @@
 
   co = checkout
   go = checkout -B
+  ours = "!f() { git co --ours $@ && git add $@; }; f"
+  theirs = "!f() { git co --theirs $@ && git add $@; }; f"
 
   ps = push
   pom = push origin master
