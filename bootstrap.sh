@@ -1,12 +1,8 @@
-# --- Functions --- #
 # Notice title
 function notice { echo  "\033[1;32m=> $1\033[0m"; }
 
 # Error title
 function error { echo "\033[1;31m=> Error: $1\033[0m"; }
-
-# List item
-function c_list { echo  "  \033[1;32m✔\033[0m $1"; }
 
 # Error list item
 function e_list { echo  "  \033[1;31m✖\033[0m $1"; }
