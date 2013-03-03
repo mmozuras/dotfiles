@@ -14,18 +14,8 @@ $exclude = [
   'Gemfile',
   'Gemfile.lock',
   'Rakefile',
-  'README.md',
-  '.osx'
+  'README.md'
 ]
-
-desc 'Backup previous dotfiles.'
-task :backup do
-  dir = FileUtils.mkdir_p( File.expand_path( File.join( '~' , '.dotfiles-backup', Time.now.to_s ) ) ).first
-  entries.each do | file |
-    orig = File.expand_path( "~/#{file}" )
-    FileUtils.cp_r orig, "#{dir}/#{file}", :verbose => true if File.exists? orig
-  end
-end
 
 desc 'Update dotfiles repository.'
 task :update do
