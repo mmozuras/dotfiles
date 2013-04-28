@@ -63,6 +63,7 @@
   sl = stash list
   sa = stash apply
   ss = stash save
+  snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
 
   g = grep -I
   listconf = config --global --list
@@ -73,6 +74,8 @@
   excludesfile = ~/.gitignore
 [merge]
   tool = vimdiff
+[diff]
+  algorithm = patience
 [github]
   user = mmozuras
 [push]
