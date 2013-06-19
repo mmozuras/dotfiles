@@ -1,0 +1,237 @@
+# vim:ft=config
+
+servers = (
+  {
+    address = "irc.vinted.net";
+    chatnet = "vinted";
+    port = "6668";
+    use_ssl = "yes";
+    ssl_verify = "yes";
+    ssl_capath = "/etc/ssl/certs/";
+    autoconnect = "yes";
+  },
+
+  {
+    address = "irc.freenode.net";
+    chatnet = "freenode";
+    port = "6697";
+    use_ssl = "yes";
+    ssl_verify = "yes";
+    ssl_capath = "/etc/ssl/certs/";
+    autoconnect = "yes";
+  }
+);
+
+chatnets = {
+  vinted = { type = "IRC"; nick = "mmozuras"; };
+  freenode = { type = "IRC"; nick = "mmozuras"; };
+};
+
+channels = (
+  { name = "#deploy"; chatnet = "vinted"; autojoin = "Yes"; },
+  { name = "#rubine"; chatnet = "vinted"; autojoin = "Yes"; },
+  { name = "#hubotorium"; chatnet = "vinted"; autojoin = "Yes"; },
+  { name = "#gem"; chatnet = "vinted"; autojoin = "Yes"; },
+  { name = "#devops"; chatnet = "vinted"; autojoin = "Yes"; },
+
+  { name = "#ruby"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "#erlang"; chatnet = "freenode"; autojoin = "Yes"; }
+);
+
+aliases = {
+  J = "join";
+  LEAVE = "part";
+  E = "exec - runz";
+  EO = "exec - -o runz";
+  EXIT = "quit";
+  LL = "lastlog";
+  W = "window";
+  M = "mark";
+  WC = "window close";
+  WK = "window kill";
+  WN = "window new hide";
+  WA = "window goto active";
+  RUN = "SCRIPT LOAD";
+  Q = "QUERY";
+};
+
+statusbar = {
+  items = {
+    time = "{sb $Z}       ";
+    window = ":: {sb [$winref] $tag $itemname} ";
+    window_empty = ":: {sb [$winref] $tag $itemname} ";
+
+    prompt = "{prompt}";
+    prompt_empty = "{prompt}";
+  };
+
+  default = {
+    window = {
+      type = "window";
+      placement = "top";
+      visible = "active";
+      items = { window = { }; window_empty = { }; typing_notice = { }; };
+    };
+
+    window_inact = {
+      type = "window";
+      placement = "top";
+      visible = "inactive";
+      items = { window = { }; window_empty = { }; };
+    };
+
+    prompt = {
+      type = "root";
+      placement = "bottom";
+      position = "100";
+      visible = "always";
+
+      items = {
+        time = { };
+        user = { };
+        prompt = { priority = "-1"; };
+        prompt_empty = { priority = "-1"; };
+
+        input = { priority = "10"; };
+      };
+    };
+
+    topic = {
+      type = "root";
+      placement = "bottom";
+      position = "1";
+      visible = "always";
+      items = { topic = { }; topic_empty = { }; };
+    };
+
+    awl_0 = {
+      items = {
+        barstart = { priority = "100"; };
+        awl_0 = { };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
+  };
+};
+
+settings = {
+  core = {
+    real_name = "Mindaugas Mozūras";
+    user_name = "mmozuras";
+    nick = "mmozuras";
+    awaylog_file = "/dev/null";
+    recode_autodetect_utf8 = "yes";
+    recode_fallback = "CP1252";
+  };
+
+  "fe-text" = { actlist_sort = "refnum"; };
+
+  "fe-common/core" = {
+    emphasis = "OFF";
+    beep_msg_level = "NOTICE MSGS HILIGHT";
+    bell_beeps = "no";
+    hilight_nick_matches = "no";
+    autolog_path = "~/.irssi/logs/$tag/$0.log";
+    autolog = "yes";
+  };
+
+  "perl/core/scripts" = {
+    neat_maxlength = "15";
+    awl_display_key = "%w$N.$H$C$S ";
+    awl_position = "0";
+    awl_sbar_maxlength = "no";
+    awl_maxlines = "3";
+    screen_away_message = "away";
+    hilightwin_showprivmsg = "no";
+    lt_in_queries = "yes";
+    neat_left_actions = "no";
+  };
+};
+
+ignores = ( { level = "JOINS PARTS QUITS NICKS"; } );
+
+hilights = (
+  { text = "mmozuras"; nick = "no"; word = "yes"; fullword = "yes"; },
+  { text = "mmozuras:"; nick = "no"; word = "yes"; fullword = "yes"; },
+  { text = "@mmozuras"; nick = "no"; word = "yes"; fullword = "yes"; }
+);
+
+logs = { };
+windows = {
+  1 = { immortal = "yes"; name = "(status)"; level = "ALL"; };
+  2 = { name = "hilight"; sticky = "yes"; };
+  3 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#rubine";
+        tag = "vinted";
+      }
+    );
+  };
+  4 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#gem";
+        tag = "vinted";
+      }
+    );
+  };
+  5 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#deploy";
+        tag = "vinted";
+      }
+    );
+  };
+  6 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#hubotorium";
+        tag = "vinted";
+      }
+    );
+  };
+  7 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#devops";
+        tag = "vinted";
+      }
+    );
+  };
+  8 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#ruby";
+        tag = "freenode";
+      }
+    );
+  };
+  9 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#erlang";
+        tag = "freenode";
+      }
+    );
+  };
+};
+mainwindows = {
+  1 = { first_line = "11"; lines = "44"; };
+  2 = { first_line = "1"; lines = "10"; };
+};
