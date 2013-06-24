@@ -19,4 +19,10 @@ export NODE_PATH=/usr/local/lib/node_modules
 
 eval "$(rbenv init -)"
 
-. ~/z/z.sh
+gifit() {
+  if [[ -n "$1" ]]; then
+    ffmpeg -i $1 -s 600x375 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=3 --delay=5 > $1.gif
+  else
+    echo "proper usage: gifit <input_movie.mov>"
+  fi
+}
