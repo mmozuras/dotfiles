@@ -3,8 +3,10 @@ ZSH=$HOME/oh-my-zsh
 
 ZSH_THEME="robbyrussell"
 
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+
 # oh-my-zsh plugins
-plugins=(git ruby brew github gem heroku npm node osx rbenv redis-cli vi-mode)
+plugins=(brew git ruby gem osx rbenv vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
