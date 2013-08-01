@@ -35,13 +35,11 @@
   rs = rebase --skip
 
   d = diff
-  di = diff
   dc = diff --cached
   ds = diff --stat=160,120
   dh = diff HEAD~1
 
   l = log --graph --abbrev-commit --date=relative
-  lf = log --patch
   head = !git l -1
   h = !git head
   la = !git l --all
