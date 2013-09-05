@@ -2,6 +2,7 @@
   name = Mindaugas Mozūras
   email = mindaugas.mozuras@gmail.com
 [diff]
+  algorithm = patience
 [color]
   ui = auto
 [alias]
