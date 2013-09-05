@@ -2,12 +2,8 @@
 
 servers = (
   {
-    address = "irc.vinted.net";
-    chatnet = "vinted";
-    port = "6668";
-    use_ssl = "yes";
-    ssl_verify = "yes";
-    ssl_capath = "/etc/ssl/certs/";
+    address = "chat.vinted.net";
+    chatnet = "xmpp";
     autoconnect = "yes";
   },
 
@@ -23,16 +19,15 @@ servers = (
 );
 
 chatnets = {
-  vinted = { type = "IRC"; nick = "mmozuras"; };
+  xmpp = { type = "XMPP"; nick = "mmozuras"; };
   freenode = { type = "IRC"; nick = "mmozuras"; };
 };
 
 channels = (
-  { name = "#deploy"; chatnet = "vinted"; autojoin = "Yes"; },
-  { name = "#rubine"; chatnet = "vinted"; autojoin = "Yes"; },
-  { name = "#hubotorium"; chatnet = "vinted"; autojoin = "Yes"; },
-  { name = "#gem"; chatnet = "vinted"; autojoin = "Yes"; },
-  { name = "#devops"; chatnet = "vinted"; autojoin = "Yes"; },
+  { name = "deploy@rooms.chat.vinted.net"; chatnet = "xmpp"; autojoin = "Yes"; },
+  { name = "work@rooms.chat.vinted.net"; chatnet = "xmpp"; autojoin = "Yes"; },
+  { name = "underground@rooms.chat.vinted.net"; chatnet = "xmpp"; autojoin = "Yes"; },
+  { name = "ruby@rooms.chat.vinted.net"; chatnet = "xmpp"; autojoin = "Yes"; },
 
   { name = "#ruby"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "#erlang"; chatnet = "freenode"; autojoin = "Yes"; }
@@ -164,9 +159,9 @@ windows = {
     items = (
       {
         type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#rubine";
-        tag = "vinted";
+        chat_type = "XMPP";
+        name = "deploy@rooms.chat.vinted.net";
+        tag = "xmpp";
       }
     );
   };
@@ -174,9 +169,9 @@ windows = {
     items = (
       {
         type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#gem";
-        tag = "vinted";
+        chat_type = "XMPP";
+        name = "work@rooms.chat.vinted.net";
+        tag = "xmpp";
       }
     );
   };
@@ -184,9 +179,9 @@ windows = {
     items = (
       {
         type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#deploy";
-        tag = "vinted";
+        chat_type = "XMPP";
+        name = "underground@rooms.chat.vinted.net";
+        tag = "xmpp";
       }
     );
   };
@@ -194,23 +189,13 @@ windows = {
     items = (
       {
         type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#hubotorium";
-        tag = "vinted";
+        chat_type = "XMPP";
+        name = "ruby@rooms.chat.vinted.net";
+        tag = "xmpp";
       }
     );
   };
   7 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#devops";
-        tag = "vinted";
-      }
-    );
-  };
-  8 = {
     items = (
       {
         type = "CHANNEL";
@@ -220,7 +205,7 @@ windows = {
       }
     );
   };
-  9 = {
+  8 = {
     items = (
       {
         type = "CHANNEL";
