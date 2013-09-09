@@ -131,6 +131,20 @@ settings = {
     hilight_nick_matches = "no";
     autolog_path = "~/.irssi/logs/$tag/$0.log";
     autolog = "yes";
+    #theme = "solarized-universal";
+    #hilight_color = "= %R";
+  };
+
+  "fe-common/xmpp" = {
+    xmpp_roster_default_group = "| UNKOWN GROUP |";
+    xmpp_roster_show_unsubscribed = "no";
+    xmpp_roster_show_offline = "no";
+    xmpp_status_window = "no";
+    xmpp_timestamp_format = "%H:%M";
+  };
+
+  "xmpp/core" = {
+    xmpp_set_nick_as_username = "yes";
   };
 
   "perl/core/scripts" = {
