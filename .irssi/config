@@ -28,6 +28,8 @@ channels = (
   { name = "work@rooms.chat.vinted.net"; chatnet = "xmpp"; autojoin = "Yes"; },
   { name = "underground@rooms.chat.vinted.net"; chatnet = "xmpp"; autojoin = "Yes"; },
   { name = "ruby@rooms.chat.vinted.net"; chatnet = "xmpp"; autojoin = "Yes"; },
+  { name = "hackers@rooms.chat.vinted.net"; chatnet = "xmpp"; autojoin = "Yes"; },
+  { name = "gem@rooms.chat.vinted.net"; chatnet = "xmpp"; autojoin = "Yes"; },
 
   { name = "#ruby"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "#erlang"; chatnet = "freenode"; autojoin = "Yes"; }
@@ -199,13 +201,33 @@ windows = {
     items = (
       {
         type = "CHANNEL";
+        chat_type = "XMPP";
+        name = "hackers@rooms.chat.vinted.net";
+        tag = "xmpp";
+      }
+    );
+  };
+  8 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "XMPP";
+        name = "gem@rooms.chat.vinted.net";
+        tag = "xmpp";
+      }
+    );
+  };
+  9 = {
+    items = (
+      {
+        type = "CHANNEL";
         chat_type = "IRC";
         name = "#ruby";
         tag = "freenode";
       }
     );
   };
-  8 = {
+  10 = {
     items = (
       {
         type = "CHANNEL";
