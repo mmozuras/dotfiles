@@ -33,6 +33,7 @@ channels = (
 
   { name = "#ruby"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "#erlang"; chatnet = "freenode"; autojoin = "Yes"; }
+  { name = "#vim"; chatnet = "freenode"; autojoin = "Yes"; }
 );
 
 aliases = {
@@ -224,12 +225,22 @@ windows = {
       {
         type = "CHANNEL";
         chat_type = "IRC";
-        name = "#ruby";
+        name = "#vim";
         tag = "freenode";
       }
     );
   };
   10 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#ruby";
+        tag = "freenode";
+      }
+    );
+  };
+  11 = {
     items = (
       {
         type = "CHANNEL";
