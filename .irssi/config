@@ -152,6 +152,7 @@ hilights = (
   { text = "mmozuras"; nick = "no"; word = "yes"; fullword = "yes"; },
   { text = "mmozuras:"; nick = "no"; word = "yes"; fullword = "yes"; },
   { text = "@mmozuras"; nick = "no"; word = "yes"; fullword = "yes"; }
+  { text = "Mindaugas"; nick = "no"; word = "yes"; fullword = "yes"; }
 );
 
 logs = { };
