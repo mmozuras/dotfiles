@@ -162,7 +162,10 @@ settings = {
   };
 };
 
-ignores = ( { level = "JOINS PARTS QUITS NICKS"; } );
+ignores = (
+   { level = "JOINS PARTS QUITS NICKS"; }
+   { level = "MODES"; network = "xmpp"; }
+);
 
 hilights = (
   { text = "mmozuras"; nick = "no"; word = "yes"; fullword = "yes"; },
