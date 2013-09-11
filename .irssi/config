@@ -153,6 +153,7 @@ settings = {
     awl_position = "0";
     awl_sbar_maxlength = "no";
     awl_maxlines = "3";
+    awl_prefer_name = "yes";
     screen_away_message = "away";
     hilightwin_showprivmsg = "no";
     lt_in_queries = "yes";
@@ -179,6 +180,7 @@ windows = {
   1 = { immortal = "yes"; name = "(status)"; level = "ALL"; };
   2 = { name = "hilight"; sticky = "yes"; };
   3 = {
+    name = "deploy@vinted";
     items = (
       {
         type = "CHANNEL";
@@ -189,6 +191,7 @@ windows = {
     );
   };
   4 = {
+    name = "work@vinted";
     items = (
       {
         type = "CHANNEL";
@@ -199,6 +202,7 @@ windows = {
     );
   };
   5 = {
+    name = "underground@vinted";
     items = (
       {
         type = "CHANNEL";
@@ -209,6 +213,7 @@ windows = {
     );
   };
   6 = {
+    name = "ruby@vinted";
     items = (
       {
         type = "CHANNEL";
@@ -219,6 +224,7 @@ windows = {
     );
   };
   7 = {
+    name = "hackers@vinted";
     items = (
       {
         type = "CHANNEL";
@@ -229,6 +235,7 @@ windows = {
     );
   };
   8 = {
+    name = "gem@vinted";
     items = (
       {
         type = "CHANNEL";
