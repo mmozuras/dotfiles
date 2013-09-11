@@ -32,8 +32,9 @@ channels = (
   { name = "gem@rooms.chat.vinted.net"; chatnet = "xmpp"; autojoin = "Yes"; },
 
   { name = "#ruby"; chatnet = "freenode"; autojoin = "Yes"; },
-  { name = "#erlang"; chatnet = "freenode"; autojoin = "Yes"; }
-  { name = "#vim"; chatnet = "freenode"; autojoin = "Yes"; }
+  { name = "#erlang"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "#vim"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "#machinelearning"; chatnet = "freenode"; autojoin = "Yes"; }
 );
 
 aliases = {
@@ -260,6 +261,16 @@ windows = {
         type = "CHANNEL";
         chat_type = "IRC";
         name = "#erlang";
+        tag = "freenode";
+      }
+    );
+  };
+  12 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#machinelearning";
         tag = "freenode";
       }
     );
