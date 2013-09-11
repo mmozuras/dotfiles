@@ -144,9 +144,7 @@ settings = {
     xmpp_timestamp_format = "%H:%M";
   };
 
-  "xmpp/core" = {
-    xmpp_set_nick_as_username = "yes";
-  };
+  "xmpp/core" = { xmpp_set_nick_as_username = "yes"; };
 
   "perl/core/scripts" = {
     neat_maxlength = "15";
@@ -170,8 +168,10 @@ ignores = (
 hilights = (
   { text = "mmozuras"; nick = "no"; word = "yes"; fullword = "yes"; },
   { text = "mmozuras:"; nick = "no"; word = "yes"; fullword = "yes"; },
-  { text = "@mmozuras"; nick = "no"; word = "yes"; fullword = "yes"; }
-  { text = "Mindaugas"; nick = "no"; word = "yes"; fullword = "yes"; }
+  { text = "@mmozuras"; nick = "no"; word = "yes"; fullword = "yes"; },
+  { text = "Mindaugas"; nick = "no"; word = "yes"; fullword = "yes"; },
+  { text = "@MM"; nick = "no"; word = "yes"; fullword = "yes"; },
+  { text = "MM:"; nick = "no"; word = "yes"; fullword = "yes"; }
 );
 
 logs = { };
