@@ -34,6 +34,7 @@
   ri = rebase --interactive
   rc = rebase --continue
   rs = rebase --skip
+  ra = rebase --abort
 
   d = diff
   dc = diff --cached
