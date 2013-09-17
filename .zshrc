@@ -12,6 +12,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias vi="mvim -v"
 alias vim="mvim -v"
+alias be="bundle exec"
 
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 
