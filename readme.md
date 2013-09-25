@@ -2,7 +2,7 @@
 
 ## Bootstrapper
 
-The bootstrapper depends on three things: ruby, rake, and bundler.
+The bootstrapper depends on three things: git, ruby and rake.
 
 To install, just run:
 
