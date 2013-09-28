@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+# Make sure we’re using the latest Homebrew
+brew update
+
+# Upgrade any already-installed formulae
+brew upgrade
+
+# Install useful binaries
+brew install ctags
+brew install erlang
+brew install elixir
+brew install irssi
+brew install git
+brew install hub
+brew install node
+brew install rbenv
+brew install the_silver_searcher
+brew install zsh
+
+brew tap homebrew/versions
+
+# Install native apps
+brew tap phinze/homebrew-cask
+brew install brew-cask
+
+function installcask() {
+  brew cask install "${@}" 2> /dev/null
+}
+
+installcask dropbox
+installcask google-chrome
+installcask google-chrome-canary
+installcask iterm2
+installcask macvim
+installcask vlc
+
+# Remove outdated versions from the cellar
+brew cleanup
