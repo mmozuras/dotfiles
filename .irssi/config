@@ -26,10 +26,8 @@ chatnets = {
 channels = (
   { name = "deploy@rooms.chat.vinted.net"; chatnet = "xmpp"; autojoin = "Yes"; },
   { name = "work@rooms.chat.vinted.net"; chatnet = "xmpp"; autojoin = "Yes"; },
-  { name = "underground@rooms.chat.vinted.net"; chatnet = "xmpp"; autojoin = "Yes"; },
   { name = "ruby@rooms.chat.vinted.net"; chatnet = "xmpp"; autojoin = "Yes"; },
   { name = "hackers@rooms.chat.vinted.net"; chatnet = "xmpp"; autojoin = "Yes"; },
-  { name = "gem@rooms.chat.vinted.net"; chatnet = "xmpp"; autojoin = "Yes"; },
 
   { name = "#ruby"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "#erlang"; chatnet = "freenode"; autojoin = "Yes"; },
@@ -202,17 +200,6 @@ windows = {
     );
   };
   5 = {
-    name = "underground@vinted";
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "XMPP";
-        name = "underground@rooms.chat.vinted.net";
-        tag = "xmpp";
-      }
-    );
-  };
-  6 = {
     name = "ruby@vinted";
     items = (
       {
@@ -223,7 +210,7 @@ windows = {
       }
     );
   };
-  7 = {
+  6 = {
     name = "hackers@vinted";
     items = (
       {
@@ -234,18 +221,7 @@ windows = {
       }
     );
   };
-  8 = {
-    name = "gem@vinted";
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "XMPP";
-        name = "gem@rooms.chat.vinted.net";
-        tag = "xmpp";
-      }
-    );
-  };
-  9 = {
+  7 = {
     items = (
       {
         type = "CHANNEL";
@@ -255,7 +231,7 @@ windows = {
       }
     );
   };
-  10 = {
+  8 = {
     items = (
       {
         type = "CHANNEL";
@@ -265,7 +241,7 @@ windows = {
       }
     );
   };
-  11 = {
+  9 = {
     items = (
       {
         type = "CHANNEL";
@@ -275,7 +251,7 @@ windows = {
       }
     );
   };
-  12 = {
+  10 = {
     items = (
       {
         type = "CHANNEL";
