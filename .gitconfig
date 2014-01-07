@@ -29,6 +29,7 @@
 
   sub = submodule
   subpull = submodule foreach git pull origin master
+  subrm = "!f() { git submodule deinit $@ && git rm $@; }; f"
 
   r = rebase
   ri = rebase --interactive
