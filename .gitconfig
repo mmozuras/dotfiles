@@ -66,7 +66,7 @@
   ss = stash save
   snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
 
-  g = grep -I
+  g = grep --color=always --ignore-case --break --heading --line-number
   listconf = config --global --list
 
   assume = update-index --assume-unchanged
