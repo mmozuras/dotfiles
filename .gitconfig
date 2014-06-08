@@ -64,10 +64,6 @@
 
   g = grep --color=always --ignore-case --break --heading --line-number
   listconf = config --global --list
-
-  assume = update-index --assume-unchanged
-  unassume = update-index --no-assume-unchanged
-  assumed = "!git ls-files -v | grep ^h | cut -c 3-"
 [color]
   ui = auto
 [core]
