@@ -1,10 +1,6 @@
 [user]
   name = Mindaugas Mozūras
   email = mindaugas.mozuras@gmail.com
-[diff]
-  algorithm = patience
-[color]
-  ui = auto
 [alias]
   s = status --short --untracked-files
   st = status
@@ -72,16 +68,18 @@
   assume = update-index --assume-unchanged
   unassume = update-index --no-assume-unchanged
   assumed = "!git ls-files -v | grep ^h | cut -c 3-"
-[format]
-  pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
+[color]
+  ui = auto
 [core]
   editor = vim
   excludesfile = ~/.gitignore
-[merge]
-  tool = vimdiff
 [diff]
   algorithm = patience
+[format]
+  pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
 [github]
   user = mmozuras
+[merge]
+  tool = vimdiff
 [push]
   default = current
