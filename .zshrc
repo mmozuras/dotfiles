@@ -15,6 +15,7 @@ for function in ~/.zsh/functions/*; do
   source $function
 done
 
+alias g="git"
 alias vi="mvim -v"
 alias vim="mvim -v"
 alias be="bundle exec"
