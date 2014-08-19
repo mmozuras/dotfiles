@@ -7,7 +7,7 @@ DISABLE_AUTO_UPDATE="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # oh-my-zsh plugins
-plugins=(brew git ruby gem osx rbenv vi-mode)
+plugins=(brew ruby rbenv vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
