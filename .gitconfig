@@ -56,6 +56,7 @@
   redo = reset --soft HEAD^
   purge = !git reset --hard && git clean -fd
   cleanup = !git remote prune origin && git gc && git clean -dfx && git stash clear
+  clean-merged = !git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d
 
   sl = stash list
   sa = stash apply
