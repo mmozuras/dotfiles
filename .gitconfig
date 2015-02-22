@@ -7,6 +7,7 @@
 
   a = add
   aa = add --all
+  ap = add --patch
 
   c = commit
   amend = commit --amend
