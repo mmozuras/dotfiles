@@ -19,6 +19,7 @@ alias g="git"
 alias vi="mvim -v"
 alias vim="mvim -v"
 alias be="bundle exec"
+alias brewup="brew update && brew upgrade --all && brew linkapps && brew cleanup && brew prune && brew doctor"
 
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 
