@@ -21,6 +21,8 @@ alias vim="mvim -v"
 alias be="bundle exec"
 alias brewup="brew update && brew upgrade --all && brew linkapps && brew cleanup && brew prune && brew doctor"
 
+export EDITOR="mvim -v"
+
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 
 export NODE_PATH=/usr/local/lib/node_modules
