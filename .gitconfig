@@ -17,6 +17,7 @@
   theirs = "!f() { git co --theirs $@ && git add $@; }; f"
 
   ps = push
+  psf = push --force-with-lease
 
   fa = fetch --all
   pl = pull
