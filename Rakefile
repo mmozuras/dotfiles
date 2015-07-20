@@ -1,22 +1,5 @@
 require 'fileutils'
 
-# Files
-def entries
-  @files ||= Dir.entries( File.expand_path( '~/.dotfiles' ) ) - $exclude
-end
-
-# Files and folders which shouldn't be copied over
-$exclude = [
-  '.',
-  '..',
-  '.git',
-  'bootstrap.sh',
-  'Gemfile',
-  'Gemfile.lock',
-  'Rakefile',
-  'README.md'
-]
-
 desc 'Update dotfiles repository.'
 task :update do
   system 'git pull'
@@ -54,4 +37,49 @@ namespace :install do
       system %{ chsh -s /bin/zsh }
     end
   end
+
+  task :iterm do
+    system %{ /usr/libexec/PlistBuddy -c "Add :'Custom Color Presets':'Solarized Dark' dict" ~/Library/Preferences/com.googlecode.iterm2.plist }
+    system %{ /usr/libexec/PlistBuddy -c "Merge 'iTerm2/Solarized Dark.itermcolors' :'Custom Color Presets':'Solarized Dark'" ~/Library/Preferences/com.googlecode.iterm2.plist }
+
+    color_scheme_file = File.join('iTerm2', "Solarized Dark.itermcolors")
+
+    iTerm_profile_list.count.times { |idx| apply_theme_to_iterm_profile_idx idx, color_scheme_file }
+  end
+
+  private
+
+  def iTerm_profile_list
+    profiles=Array.new
+    begin
+      profiles <<  %x{ /usr/libexec/PlistBuddy -c "Print :'New Bookmarks':#{profiles.size}:Name" ~/Library/Preferences/com.googlecode.iterm2.plist 2>/dev/null}
+    end while $?.exitstatus==0
+    profiles.pop
+    profiles
+  end
+
+  def apply_theme_to_iterm_profile_idx(index, color_scheme_path)
+    values = Array.new
+    16.times { |i| values << "Ansi #{i} Color" }
+    values << ['Background Color', 'Bold Color', 'Cursor Color', 'Cursor Text Color', 'Foreground Color', 'Selected Text Color', 'Selection Color']
+    values.flatten.each { |entry| system %{ /usr/libexec/PlistBuddy -c "Delete :'New Bookmarks':#{index}:'#{entry}'" ~/Library/Preferences/com.googlecode.iterm2.plist } }
+
+    system %{ /usr/libexec/PlistBuddy -c "Merge '#{color_scheme_path}' :'New Bookmarks':#{index}" ~/Library/Preferences/com.googlecode.iterm2.plist }
+    system %{ defaults read com.googlecode.iterm2 }
+  end
+
+  def entries
+    @files ||= Dir.entries( File.expand_path( '~/.dotfiles' ) ) - $exclude
+  end
+
+  $exclude = [
+    '.',
+    '..',
+    '.git',
+    'bootstrap.sh',
+    'Gemfile',
+    'Gemfile.lock',
+    'Rakefile',
+    'README.md'
+  ]
 end
