@@ -43,4 +43,15 @@ namespace :install do
   task :fonts do
     system "cp -f #{File.dirname(__FILE__)}/fonts/* $HOME/Library/Fonts"
   end
+
+  task :zsh do
+    if File.exists?("/usr/local/bin/zsh")
+      if File.readlines("/private/etc/shells").grep("/usr/local/bin/zsh").empty?
+        system %{ echo "/usr/local/bin/zsh" | sudo tee -a /private/etc/shells }
+      end
+      system %{ chsh -s /usr/local/bin/zsh }
+    else
+      system %{ chsh -s /bin/zsh }
+    end
+  end
 end
