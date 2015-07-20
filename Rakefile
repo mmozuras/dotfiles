@@ -39,4 +39,8 @@ namespace :install do
       FileUtils.cp_r file, File.expand_path( "~/#{file}" ), :verbose => true, :remove_destination => true
     end
   end
+
+  task :fonts do
+    system "cp -f #{File.dirname(__FILE__)}/fonts/* $HOME/Library/Fonts"
+  end
 end
