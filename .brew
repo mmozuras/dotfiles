@@ -36,6 +36,9 @@ installcask dropbox
 installcask google-chrome
 installcask iterm2
 installcask vlc
+installcask skype
+installcask utorrent
+installcask steam
 
 brew linkapps
 brew cleanup
