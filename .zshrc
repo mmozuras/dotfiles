@@ -20,6 +20,7 @@ alias vi="mvim -v"
 alias vim="mvim -v"
 alias be="bundle exec"
 alias brewup="brew update && brew upgrade --all && brew linkapps && brew cleanup && brew prune && brew doctor"
+alias hpr="hub pull-request -o"
 
 export EDITOR="mvim -v"
 
