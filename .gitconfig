@@ -42,6 +42,7 @@
   head = !git l -1
   h = !git head
   la = !git l --all
+  graph = log --graph -20 --branches --remotes --tags  --format=format:'%Cgreen%h %Creset• %<(75,trunc)%s (%cN, %cr) %Cred%d' --date-order'
 
   day = shortlog --since=one.day.ago
   week = shortlog --since=one.week.ago
