@@ -34,7 +34,7 @@
   ra = rebase --abort
 
   d = diff
-  dc = diff --cached
+  dc = diff --cached --diff-algorithm=minimal -w
   ds = diff --stat=160,120
   dh = diff HEAD~1
 
