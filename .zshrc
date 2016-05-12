@@ -21,6 +21,7 @@ alias vim="mvim -v"
 alias be="bundle exec"
 alias brewup="brew update && brew upgrade --all && brew linkapps && brew cleanup && brew prune && brew doctor"
 alias hpr="hub pull-request -o"
+alias wifi="networksetup -setairportpower en0 off; networksetup -setairportpower en0 on"
 
 export EDITOR="mvim -v"
 
