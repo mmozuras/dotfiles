@@ -15,6 +15,7 @@ brew install irssi
 brew install git
 brew install hub
 brew install macvim --custom-icons --override-system-vim --with-lua --with-luajit
+brew install mkvdts2ac3
 brew install node
 brew install reattach-to-user-namespace
 brew install rbenv
