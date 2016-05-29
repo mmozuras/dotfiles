@@ -34,7 +34,6 @@ function installcask() {
 }
 
 installcask dropbox
-installcask google-chrome
 installcask iterm2
 installcask vlc
 installcask skype
