@@ -40,6 +40,7 @@ installcask java
 installcask skype
 installcask utorrent
 installcask steam
+installcask mactex
 
 brew linkapps
 brew cleanup
