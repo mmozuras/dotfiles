@@ -11,6 +11,7 @@ brew install cmake
 brew install ctags
 brew install erlang
 brew install elixir
+brew install exercism
 brew install irssi
 brew install git
 brew install hub
