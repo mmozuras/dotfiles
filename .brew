@@ -39,6 +39,7 @@ installcask vlc
 installcask java
 installcask skype
 installcask utorrent
+installcask slack
 installcask spotify
 installcask steam
 installcask mactex
