@@ -1,0 +1,10 @@
+mkvac3() {
+  rm **/*.nfo
+  rm **/*.txt
+  find . -type d -empty -exec rmdir {} \;
+  mv **/*.mkv .
+  for f in *.mkv
+  do
+    mkvdts2ac3 -i -d -n "$f"
+  done
+}
