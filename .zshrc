@@ -25,6 +25,6 @@ alias wifi="networksetup -setairportpower en0 off; networksetup -setairportpower
 
 export EDITOR="mvim -v"
 
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Library/Tex/texbin
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Library/Tex/texbin
 
 eval "$(rbenv init -)"
