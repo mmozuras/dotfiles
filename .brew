@@ -46,7 +46,6 @@ installcask spotify
 installcask steam
 installcask mactex
 
-brew linkapps
 brew cleanup
 brew prune
 brew doctor
