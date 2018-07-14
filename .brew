@@ -17,6 +17,7 @@ brew install go
 brew install gifsicle
 brew install git
 brew install hub
+brew install imageoptim-cli
 brew install macvim --custom-icons --override-system-vim --with-lua --with-luajit
 brew install mkvdts2ac3
 brew install node
