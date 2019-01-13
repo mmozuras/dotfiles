@@ -19,7 +19,7 @@ alias g="git"
 alias vi="mvim -v"
 alias vim="mvim -v"
 alias be="bundle exec"
-alias brewup="brew update && brew upgrade && brew cleanup && brew prune && brew doctor"
+alias brewup="brew update && brew upgrade && brew cleanup && brew doctor"
 alias hpr="hub pull-request -o"
 alias wifi="networksetup -setairportpower en0 off; networksetup -setairportpower en0 on"
 
