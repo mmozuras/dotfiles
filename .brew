@@ -27,24 +27,12 @@ brew install the_silver_searcher
 brew install tmux
 brew install zsh
 
-# Install native apps
-brew tap phinze/homebrew-cask
-brew install brew-cask
-
-function installcask() {
-  brew cask install "${@}" 2> /dev/null
-}
-
-installcask dropbox
-installcask iterm2
-installcask vlc
-installcask java
-installcask skype
-installcask utorrent
-installcask slack
-installcask spotify
-installcask steam
-installcask mactex
+brew cask install iterm2
+brew cask install vlc
+brew cask install slack
+brew cask install spotify
+brew cask install steam
+brew cask install mactex
 
 brew cleanup
 brew prune
