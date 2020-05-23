@@ -35,5 +35,4 @@ brew cask install steam
 brew cask install mactex
 
 brew cleanup
-brew prune
 brew doctor
