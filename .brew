@@ -20,6 +20,7 @@ brew install hub
 brew install imageoptim-cli
 brew install macvim
 brew install mkvdts2ac3
+brew install mono
 brew install node
 brew install python
 brew install reattach-to-user-namespace
